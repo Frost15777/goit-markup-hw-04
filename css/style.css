@@ -185,7 +185,8 @@ img {
     color: var(--white-background-color);
     padding-top: 188px;
     padding-bottom: 188px;
-
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/img-17.jpg);
 }
 
 .container .page-title {
@@ -287,6 +288,18 @@ img {
 .section-four .section-text {
     text-align: center;
 }
+/*--------------------Section-five--------------------*/
+.section-five {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.list-section-five {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 72px auto 0;
+}
+
 
 /*--------------------Portfolio--------------------*/
 

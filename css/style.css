@@ -164,11 +164,19 @@ img {
     padding: 24px 0;
     position: relative;
 }
-.page-link::after {
+.page-link-studio {
+    font-weight: 500;
+    color: var(--pressed-state-color);
+    display: block;
+    padding: 24px 0;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.page-link-studio::after {
     position: absolute;
     left: 0;
     bottom: -1px;
-    content: Studio;
+    content: "";
     height: 4px;
     border-radius: 2px;
     background-color: var(--pressed-state-color);
@@ -181,6 +189,9 @@ img {
 
 .header-contacts {
     font-style: normal;
+}
+.contacts {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts .link {
@@ -199,6 +210,7 @@ img {
     color: var(--white-background-color);
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/img-17.jpg);
     background-repeat: no-repeat;
@@ -388,6 +400,22 @@ img {
 .section-portfolio {
     padding: 96px 0 120px 0;
 }
+.page-link-portfolio {
+    font-weight: 500;
+    color: var(--pressed-state-color);
+    display: block;
+    padding: 24px 0;
+    position: relative;
+}
+.page-link-portfolio::after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--pressed-state-color);
+}
 
 .button-list {
     display: flex;
@@ -452,7 +480,7 @@ img {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-portfolio:hover .hidden-text-portfolio,
-.link-portfolio:focus {
+.link-portfolio:focus .hidden-text-portfolio {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);

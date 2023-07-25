@@ -187,6 +187,7 @@ img {
 .page-link:hover,
 .page-link:focus {
     color: var(--pressed-state-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -212,7 +213,6 @@ img {
     color: var(--white-background-color);
     padding-top: 188px;
     padding-bottom: 188px;
-    max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/img-17.jpg);
     background-repeat: no-repeat;
